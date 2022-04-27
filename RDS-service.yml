@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: k5s-review-rds-svc
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: k5s-rds-review.cuxeaywhwt9d.ap-northeast-2.rds.amazonaws.com
+  ports:
+  - port: 3307
+    targetPort: 3307
+selector:
