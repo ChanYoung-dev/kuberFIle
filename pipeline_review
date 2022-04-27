@@ -5,7 +5,6 @@ pipeline {
         GIT_ID = "chanyoung-dev"
         GIT_URL_JENKINS = "github.com/K5S-TEAM/HotMovie.git"
         GIT_URL_ARGO = "github.com/K5S-TEAM/argo-cd.git"
-        GIT_CREDENTIALS_ID = "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"
         AWS_REGION = "ap-northeast-2"
         AWS_CREDENTIALS_ID = "AWS-Credentials"
         ECR_BASE_URL = "262213740647.dkr.ecr.ap-northeast-2.amazonaws.com"
