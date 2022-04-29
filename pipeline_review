@@ -164,7 +164,7 @@ metadata:
   labels:
     app: k5smovie-review-deploy
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: k5smovie-review
@@ -181,6 +181,11 @@ spec:
         - containerPort: 8080
         - containerPort: 8081
         - containerPort: 3306
+        resources:
+          requests:
+            cpu: "150m"
+          limits:
+            cpu: "300m"
 EOF
                         cat>service.yaml<<-EOF
 apiVersion: v1
